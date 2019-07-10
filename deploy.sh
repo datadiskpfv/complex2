@@ -15,3 +15,4 @@ kubectl apply -f k8s
 kubectl set image deployments/server-deployment server=datadiskpfv/multi-server:$SHA
 kubectl set image deployments/client-deployment server=datadiskpfv/multi-client:$SHA
 kubectl set image deployments/worker-deployment server=datadiskpfv/multi-worker:$SHA
+
