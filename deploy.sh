@@ -13,6 +13,5 @@ docker push datadiskpfv/multi-worker:$SHA
 kubectl apply -f k8s
 
 kubectl set image deployments/server-deployment server=datadiskpfv/multi-server:$SHA
-kubectl set image deployments/client-deployment server=datadiskpfv/multi-client:$SHA
-kubectl set image deployments/worker-deployment server=datadiskpfv/multi-worker:$SHA
-
+kubectl set image deployments/client-deployment client=datadiskpfv/multi-client:$SHA
+kubectl set image deployments/worker-deployment worker=datadiskpfv/multi-worker:$SHA
